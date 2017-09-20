@@ -18,7 +18,8 @@ import static android.app.Notification.COLOR_DEFAULT;
  */
 
 public class FastIndexBar extends View {
-    private static final int COLOR_PRESSED = Color.WHITE;
+    private int COLOR_DEFAULT = R.color.inactivecolor;
+    private int COLOR_PRESSED = R.color.colorAccent;
     private Paint mPaint;
     private OnTouchIndexChangedListner mListner;
 
@@ -49,7 +50,7 @@ public class FastIndexBar extends View {
 
     private void initPaint() {
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        mPaint.setColor(COLOR_DEFAULT);
+        mPaint.setColor(getResources().getColor(COLOR_DEFAULT));
         mPaint.setTextSize(20);
         mPaint.setTextAlign(Paint.Align.CENTER);//设置起点是文字边框底边的中心
     }
@@ -70,7 +71,7 @@ public class FastIndexBar extends View {
             int mTextHeight = getTextHeight(mText, mPaint);
             // 绘制文字y轴的起点 =  格子高度的一半 + 文字高度的一半 + i*格子高度
             float y = mHeight / 2 + mTextHeight / 2 + i * mHeight;
-            mPaint.setColor(i==mIndex?COLOR_PRESSED: Color.BLACK);
+            mPaint.setColor(i==mIndex? getResources().getColor(COLOR_PRESSED) : getResources().getColor(COLOR_DEFAULT) );
             canvas.drawText(mText, x, y, mPaint);
         }
     }

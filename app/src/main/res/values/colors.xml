@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorPrimary">#FFEC801A</color>
+    <color name="colorPrimaryDark">#19a5f5</color>
+    <color name="colorAccent">#00aefe</color>
+    <color name="bottombarcolor">#f6f6f6</color>
+    <color name="activecolor">#00aefe</color>
+    <color name="inactivecolor">#bbbbbb</color>
+    <color name="line">#d7d7d7</color>
+    <color name="red">#ea655c</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#43a338</color>
+    <color name="myGreen">#aaf86e</color>
+    <color name="myRed">#f27085</color>
+
+    <color name="item_bg_pressed">#e4e3e3</color>
+    <color name="item_bg_normal">#FEFFFE</color>
+
+    <color name="button_bg">#FC5955</color>
+
+
+    <color name="popup_bg">#8f000000</color>
+    <color name="line_bg">#CDCDCD</color>
+    <color name="company_bg">#FF416D95</color>
+    <color name="tv_bg">#FF2D3F5E</color>
+    <color name="list_divider_line">#e7e7e7</color>
+    <color name="line_bg_item">#FF7590AF</color>
 </resources>

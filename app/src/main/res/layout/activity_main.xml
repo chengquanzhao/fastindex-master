@@ -1,19 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.davidzhao.fastindexing.MainActivity">
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
     <com.davidzhao.fastindexing.FastIndexBar
+        android:id="@+id/quickIndexBar"
         android:layout_alignParentRight="true"
         android:layout_width="30dp"
-        android:layout_height="495dp"
+        android:layout_height="match_parent"
+        android:background="@null"
+        />
 
+    <TextView android:layout_width="110dp"
+        android:background="@drawable/bg"
+        android:textSize="50sp"
+        android:id="@+id/currentWord"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_height="110dp"/>
 
-
-        android:background="#B51421"
-        tools:layout_editor_absoluteY="8dp"
-        tools:layout_editor_absoluteX="0dp" />
-
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
